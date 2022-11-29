@@ -1,0 +1,12 @@
+{% extends "blog_practice_app/base.html" %}
+{% block content %}
+
+<form method="post" action="{% url 'blog_practice_app:register' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button name="submit">Register</button>
+    <input type="hidden" name="next" value="{% url 'blog_practice_app:index' %}" />
+</form>
+
+{% endblock content %}

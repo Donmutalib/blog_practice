@@ -1,0 +1,16 @@
+{% extends "blog_practice_app/base.html" %}
+{% block content %}
+
+<p> 
+    Are you sure you want to delete?
+    <a href="{% url 'blog_practice_app:blogs' %}">Go Back</a>
+</p>
+
+<form method = "POST" action="">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Delete" name="" id="">
+
+</form>
+
+{% endblock content %}

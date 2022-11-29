@@ -1,0 +1,13 @@
+{% extends "blog_practice_app/base.html" %}
+{% block content %}
+
+
+<a href="{% url 'blog_practice_app:blogs' %}">Go Back</a>
+
+<form method = "POST" action="">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form>
+
+{% endblock content %}
