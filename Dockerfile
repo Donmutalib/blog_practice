@@ -5,8 +5,8 @@ WORKDIR /code
 COPY requirements.txt /code/
 RUN pip install -r requirements.txt
 COPY . /code/
-EXPOSE $PORT
-CMD gunicorn blog_pracitce_project.wsgi:application --bind 0.0.0.0:$PORT
+EXPOSE PORT
+CMD gunicorn blog_pracitce_project.wsgi:application --bind 0.0.0.0:PORT
 
 
 
