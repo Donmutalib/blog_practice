@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = os.environ.get('DEBUG')
 
-ALLOWED_HOSTS = ['blog-practice-docker.herokuapp.com']
+ALLOWED_HOSTS = ['blog-practice-docker.herokuapp.com', 'blogpractice-production.up.railway.app/']
 
 
 # Application definition
