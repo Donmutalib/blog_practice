@@ -1,3 +1,4 @@
 .dockerignore
 blog_practice
 __pycache__
+.env
